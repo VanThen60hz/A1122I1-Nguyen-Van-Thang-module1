@@ -29,6 +29,7 @@ body{
     position: relative;
     background: bisque;
     padding:40px;
+    color: #4b4b50;
 }
 
 .profile-Text{
@@ -117,8 +118,10 @@ body{
     font-weight: 500;
     margin-bottom: 15px;
 }
+
 .contactInfo.Education h5:nth-child(1){
     margin-bottom: 15px;
+    color: #4b4b50;
 }
 
 .contactInfo.Education h4:nth-child(3){
