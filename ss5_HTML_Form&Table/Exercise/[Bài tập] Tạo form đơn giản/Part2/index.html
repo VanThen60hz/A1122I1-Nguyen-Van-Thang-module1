@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản Part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cointaner">
+        <div class="header">
+            <h2>Đăng ký học viên</h2>
+        </div>
+        <form class="registration-form" action="index.html" method="get">
+            <div class="text">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Họ và tên</label>
+                        </td>
+                        <td>
+                            <input type="text" id ="username" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birth">Ngày sinh</label>
+                        </td>
+                        <td>
+                            <input type="text" id ="birth" name="birth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gd1">Giới tính</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="gd1" name="gender">
+                            <label for="gd1" class="gender">Nam</label>
+                            <input type="radio" id="gd2" name="gender">
+                            <label for="gd2" class="gender">Nữ</label>
+                        </td>
+                    </tr>
+
+                    <tr class="adr">
+                        <td>
+                            <label for="address" id="lablel-address">Địa chỉ</label>
+                        </td>
+                        <td>
+                            <input type="text" id ="address" name="address">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="chosseClass">Lớp</label>
+                        </td>
+                        <td>
+                            <select name="class">
+                                <option value="class?" id="chosseClass">---Chọn lớp---</option>
+                                <option value="class A">---class A---</option>
+                                <option value="class B">---class B---</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="text" id ="email" name="email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Điện thoại</label>
+                        </td>
+                        <td>
+                            <input type="text" id ="phone" name="phone">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

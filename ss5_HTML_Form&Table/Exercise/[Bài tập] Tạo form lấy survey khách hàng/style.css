@@ -1,0 +1,62 @@
+
+
+html{
+    font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+.p-head{
+    margin: 0 0 5px 0;
+    padding: 0 1% 1.1em 1%;
+    border-bottom: 1px dotted #ccc;
+}
+
+.dolla{
+    margin: 10px;
+}
+
+.cen{
+    margin: 50px;
+}
+
+#dola{
+    width: 80px;
+}
+
+#cent{
+    width: 50px;
+}
+
+#feature{
+    width: 100%;
+    height: 100px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.none-bold,
+.dolla,.cen
+{
+    font-weight: normal;
+}
+
+table{
+    margin: 0 0 0.9em 0;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #dedede;
+    border-bottom: none;
+}
+
+th{
+    border-bottom: 1px solid #dedede;
+    text-align: left;
+}
+
+td{
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    width:15%;
+    text-align: center;
+}

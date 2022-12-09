@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    width: 720px;
+    margin: 0 auto;
+}
+
+.cointaner{
+    background-color: #eaea72;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+
+}
+
+.header{
+    padding-top: 1px;
+}
+.gender{
+    color:#000000;
+}
+h2{
+    text-transform: uppercase;
+    background-color: aquamarine;
+    color: blue;
+    margin: 5px;
+}
+
+.registration-form{
+    margin-left: 8px;
+}
+
+.submit{
+    margin-left: 125px;
+}
+
+.submit input{
+    font-size: 17px;
+    width:85px;
+}
+
+td{
+    padding: 5px 0;
+}
+
+label{
+    margin-right: 50px;
+}
+
+label{
+    color: blue;
+}
+
+#username{
+    width: 250px;
+}
+
+#birth{
+    width: 150px;
+}
+
+.gender {
+    margin: 10px;
+}
+
+#lablel-address{
+    top:8px;
+    position: relative;
+}
+
+.adr td{
+    padding-bottom:80px;
+}
+
+#address{
+    position: absolute;
+    width: 230px;
+    height: 80px;
+}

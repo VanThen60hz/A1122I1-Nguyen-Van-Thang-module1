@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: cursive;
+}
+
+body{
+    background-color: #9ef5ff;
+    width:960px;
+    margin: 0 auto;
+}
+
+.container {
+    background: #ffffff;
+    margin: 100px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.text label
+,.lable-chekbox
+{
+    color:blue;
+}
+
+#user, #em{
+    border: 1px solid;
+    padding-bottom: 10px;
+}
+
+#user{
+    width: 300px;
+}
+
+#em{
+    width: 250px;
+}
+
+.header{
+    padding-top: 1px;
+}
+
+h2{
+    background-color:red;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    /*min-width: 145.6;*/
+    /*max-height: 30px ;*/
+    margin: 5px 10px;
+}
+
+.lable-form{
+    margin-left: 40px;
+}
+
+.l2{
+    padding-left: 30px;
+}
+
+.lable-chekbox{
+    position: relative;
+    margin-left: 10px;
+}
+
+
+
+.Ckbox{
+    position: absolute;
+    display: inline-block;
+}
+
+.Ckbox td{
+    padding: 0 30px;
+}
+
+.submit{
+    margin: 50px;
+    margin-left: 100px;
+}
+
+.submit input{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+img{
+    width:250px;
+    height: 238px;
+}
+
+.img{
+    text-align: center;
+}
