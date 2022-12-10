@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    background-color: #ffffff;
+    width:960px;
+    margin: 0 auto;
+}
+
+.container {
+    background: orange;
+    margin: 50px;
+    width: 900px;
+    height: 860px;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+th{
+    font-size: 20px;
+    width: 70px;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
+
+table,td{
+    border: 0.01px solid #dedede;
+    border-collapse: collapse;
+}
+
+.alpahabet{
+    text-align: right;
+    padding-right: 3px;
+}

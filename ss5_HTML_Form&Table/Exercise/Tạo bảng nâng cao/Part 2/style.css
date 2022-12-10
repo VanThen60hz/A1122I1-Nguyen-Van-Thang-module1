@@ -1,0 +1,60 @@
+
+body{
+    width: 720px;
+    margin: 0 auto;
+}
+
+table, tr, th, td {
+    border: 3px solid  #dedede;
+    border-collapse: collapse;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.table{
+    width: 100%;
+}
+
+h2{
+    color: #0000ff;
+}
+
+.none td
+{
+    border: hidden;
+}
+
+.none th{
+    border: 3px solid white;
+}
+.title-line{
+    background-color:orange;
+    color: white;
+}
+
+.row1{
+    color: red;
+}
+
+.row1 span,
+.row7 span
+{
+    color: black;
+}
+
+.row7{
+    color: blue;
+}
+
+
+.container{
+    text-align: center;
+    margin: 120px 0;
+}
+
+span{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
