@@ -1,0 +1,16 @@
+.form input{
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.form td{
+    padding-left: 50px;
+}
+
+.amount{
+    margin: 50px;
+}
+
+#result{
+    margin-left: 70px;
+}
