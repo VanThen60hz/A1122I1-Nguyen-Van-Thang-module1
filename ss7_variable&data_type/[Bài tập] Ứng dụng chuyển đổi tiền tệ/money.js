@@ -12,5 +12,5 @@ function convert(){
     }else{
         result = a*0.000042;
     }
-    document.getElementById("result").innerText = "Result:"+result;
+    document.getElementById("result").innerText = "Result: "+result;
 }

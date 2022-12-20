@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+  <label for="sale">Nhap doanh số bán hàng:</label>
+  <input type="text" name="sale" id="sale">
+  <br><br>
+  <input type="button" value="Tính hoa hồng" onclick="rose()">
+  <p id="display"></p>
+
+  <script>
+    function rose(){
+      let sale = parseInt(document.getElementById('sale').value);
+      let rose;
+      if(sale<=100)
+      {
+        rose=sale*5/100;
+      }
+      else if(sale<=300)
+      {
+        rose=sale*10/100;
+      }
+      else if(sale>300)
+      {
+        rose=sale*20/100;
+      }
+
+      document.getElementById('display').innerText = "Voi tong doanh so la " + sale + "\nThi hoa hong nhan duoc la " + rose;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch-case</title>
+</head>
+<body>
+
+<label for="month">Nhập tháng: </label><input type="text" id="month">
+<br>
+<br>
+<input type="button" value="Tính số ngày" onclick="caculateDay()">
+
+  <script>
+    function caculateDay(){
+      switch (parseInt(document.getElementById('month').value)) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+          document.write("31 ngày");
+          break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+          document.write("30 ngày");
+          break;
+        case 2:
+          document.write("29 hoặc 28 ngày")
+          break;
+        default:
+          document.write("Nhập sai rồi bạn tôi ơi")
+      }
+    }
+  </script>
+</body>
+</html>

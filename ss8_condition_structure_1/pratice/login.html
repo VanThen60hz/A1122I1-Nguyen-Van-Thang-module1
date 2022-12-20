@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đăng nhập hệ thống</title>
+</head>
+<body>
+  <script>
+    let userName = prompt("Who's there?", 'Admin');
+    if (userName == 'Admin') {
+      let pass = prompt('Password?', 'TheMaster');
+      if (pass == 'TheMaster') {
+        alert('Welcome!');
+      } else if (pass == null) {
+        alert('Canceled.');
+      } else {
+        alert('Wrong password');
+      }
+    } else if (userName == null) {
+      alert('Canceled');
+    } else {
+      alert("I don't know you");
+    }
+  </script>
+</body>
+</html>

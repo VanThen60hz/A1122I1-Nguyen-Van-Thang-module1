@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+  <div class = "text">
+    <label for="a">Nhap diem kiem tra:</label>
+    <input type="text" name="a" id="a">
+    <br>
+    <label for="b">Nhap diem giua ki:</label>
+    <input type="text" name="b" id="b">
+    <br>
+    <label for="c">Nhap diem cuoi ki:</label>
+    <input type="text" name="c" id="c">
+  </div>
+  <input type="button" value="Xếp hạng" id="rank" onclick="Rank()">
+  <p id="display"></p>
+
+  <script>
+    function Rank() {
+      let a = +document.getElementById('a').value;
+      let b = +document.getElementById('b').value;
+      let c = +document.getElementById('c').value;
+      let dtb = (a+b*2+c*3)/6;
+      let rank;
+      if(dtb <=10 && dtb >=8){
+        rank = 'Gioi';
+      }else if(dtb > 6.5 && dtb < 8){
+        rank = 'Kha';
+      }else if(dtb >= 5 && dtb <= 6.5){
+        rank = 'Trung binh';
+      }else if(dtb > 3 && dtb < 5){
+        rank = 'Yếu';
+      }else{
+        rank = 'Học lại đi em';
+      }
+      document.getElementById('display').innerText = "Xếp hạng: " + rank;
+    }
+  </script>
+</body>
+</html>
