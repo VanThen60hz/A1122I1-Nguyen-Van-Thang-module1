@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</title>
+</head>
+<body>
+  <div class = "text">
+    <label for="a">Cạnh a:</label>
+    <input type="text" name="a" id="a">
+    <br><br>
+    <label for="b">Cạnh b:</label>
+    <input type="text" name="b" id="b">
+  </div>
+  <br>
+  <input type="button" value="Tính diện tích" id="s2" onclick="caculateS()">
+
+  <p id="result"></p>
+
+  <script>
+    function caculateS(){
+      let a = +document.getElementById('a').value;
+      let b = +document.getElementById('b').value;
+
+      let s = a*b;
+
+      document.getElementById('result').innerText = "Diện tích hình chữ nhật là:" + s;
+    }
+  </script>
+</body>
+</html>

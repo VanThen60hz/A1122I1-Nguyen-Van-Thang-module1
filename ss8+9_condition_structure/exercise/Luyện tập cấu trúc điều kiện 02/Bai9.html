@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</title>
+</head>
+<body>
+  <div class = "text">
+    <label for="a">Nhập a:</label>
+    <input type="text" name="a" id="a">
+    <br><br>
+    <label for="b">Nhập b:</label>
+    <input type="text" name="b" id="b">
+    <br><br>
+    <label for="c">Nhập c:</label>
+    <input type="text" name="c" id="c">
+  </div>
+  <br>
+  <input type="button" value="Kiểm tra" id="rank" onclick="Check()">
+  <h5 id="display"></h5>
+
+
+  <script>
+    function Check(){
+      let a = +document.getElementById('a').value;
+      let b = +document.getElementById('b').value;
+      let c = +document.getElementById('c').value;
+
+      if(a> 0 && b >0 && c > 0 && a + b > c && b + c > a && a + c > b){
+        document.getElementById('display').innerText = "a,b,c là cạnh của một tam giác."
+      }else{
+        document.getElementById('display').innerText = "a,b,c không phải là cạnh của một tam giác."
+      }
+    }
+  </script>
+</body>
+</html>

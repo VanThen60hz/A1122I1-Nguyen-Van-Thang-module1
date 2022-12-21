@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<div class="text">
+    <label for="TNTT">Nhập số thu nhập tính thuế:</label>
+    <input type="text" name="TNTT" id="TNTT"> đồng
+    <br><br>
+    <input type="button" value="Tính thuế thu nhập cá nhân" onclick="caculate()">
+</div>
+
+<h5 id="result"></h5>
+
+<script>
+    function caculate(){
+        let x = document.getElementById('TNTT').value;
+
+        if(x>0 && x<=5000000){
+            document.getElementById('result').innerText = "Thuế thu nhập cá nhân phải nộp là: "+ x*5/100;
+        }else if(x>5000000 && x<=10000000){
+            document.getElementById('result').innerText = "Thuế thu nhập cá nhân phải nộp là: "+ x*10/100;
+        }else if(x>10000000){
+            document.getElementById('result').innerText = "Thuế thu nhập cá nhân phải nộp là: "+ x*15/100;
+        }else{
+            document.getElementById('result').innerText = "Số đã nhập không hợp lệ.";
+        }
+    }
+</script>
+</body>
+</html>

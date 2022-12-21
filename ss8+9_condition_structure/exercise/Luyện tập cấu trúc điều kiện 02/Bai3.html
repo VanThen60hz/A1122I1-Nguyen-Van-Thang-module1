@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình vuông khi biết cạnh a.</title>
+</head>
+<body>
+
+<div class="text">
+  <label for="a">Cạnh hình vuông:</label>
+  <input type="text" name="a" id="a">
+  <br>
+  <input type="button" value="Tính diện tích" onclick="caculates()">
+</div>
+  <p id="result"></p>
+
+
+<script>
+  function caculates(){
+    let a = +document.getElementById('a').value;
+    let Svuong = a*a;
+    document.getElementById('result').innerText = "Diện tích hình vuông là: " +Svuong;
+  }
+</script>
+</body>
+</html>

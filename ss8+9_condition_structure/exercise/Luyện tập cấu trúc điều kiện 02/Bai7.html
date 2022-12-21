@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giair phương trình bậc hai:</title>
+</head>
+<body>
+<form method="post">
+    <div class="input">
+        <br>Nhap gia tri a:
+        <input type="text" name="a" value=""><br>
+        <br> Nhap gia tri b:
+        <input type="text" name="b" value=""><br>
+        <br>Nhap gia tri c:
+        <input type="text" name="c" value=""><br>
+        <br>
+    </div>
+    <input type="button" value="Giải phương trình" onClick="Solve(this.form)">
+    <br>
+    <div class="output">
+        <h5 id="result"></h5>
+        <label for="x1">x1 =</label>
+        <input type="text" name="x" value="" id="x1">
+        <br><br>
+        <label for="x2">x2 =</label>
+        <input type="text" name="y" value="" id="x2">
+    </div>
+
+</form>
+<script>
+    function Solve(form){
+        var x1,x2;
+        var x,y,z,delta;
+        x= parseInt(form.a.value);
+        y= parseInt(form.b.value);
+        z= parseInt(form.c.value);
+        delta=(y*y-4*x*z)
+        if(delta ==0)
+        {
+            document.getElementById('result').innerText= "Phương trình có nghiệm kép:";
+            x1=-y/(2*x) ;
+            x2=-y/(2*x);
+            form.x.value=eval(x1);
+            form.y.value=eval(x2);
+        }
+        else if(delta<0)
+        {
+            document.getElementById('result').innerText= "Phương trình vô nghiệm.";
+        }
+        else{
+            document.getElementById('result').innerText= "Phương trình có hai nghiệm riêng biệt:";
+            x1=(-y-Math.sqrt(delta))/(2*x);
+            x2=(-y+Math.sqrt(delta))/(2*x);
+            form.x.value=eval(x1);
+            form.y.value=eval(x2);
+        }
+    }
+</script>
+</body>
+</html>

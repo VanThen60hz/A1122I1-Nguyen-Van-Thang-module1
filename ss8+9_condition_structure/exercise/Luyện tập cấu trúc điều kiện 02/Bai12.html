@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+<div class = "text">
+    <table>
+        <tr>
+            <td>
+                <label for="a">số tiền ban đầu</label>
+            </td>
+            <td>
+                : <input type="text" name="a" id="a">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="b">số tháng cho vay</label>
+            </td>
+            <td>
+                : <input type="text" name="b" id="b">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="c">lãi xuất hàng tháng</label>
+            </td>
+            <td>
+                : <input type="text" name="c" id="c">
+            </td>
+        </tr>
+    </table>
+
+</div>
+<input type="button" value="Tính lãi ngân hàng" id="interest" onclick="Interest()">
+<p id="display"></p>
+
+<script>
+    function Interest() {
+        let money = +document.getElementById('a').value;
+        let month = +document.getElementById('b').value;
+        let m_interest = +document.getElementById('c').value;
+
+        let interest = money * Math.pow(1+ m_interest,month);
+        document.getElementById('display').innerText = "Tổng lãi ngân hàng là:: " + interest;
+    }
+</script>
+</body>
+</html>

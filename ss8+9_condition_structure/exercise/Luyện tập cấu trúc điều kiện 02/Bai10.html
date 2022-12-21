@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện.</title>
+</head>
+<body>
+  <div class="text">
+    <label for="soDien">Nhập số điện đã dùng:</label>
+    <input type="text" name="soDien" id="soDien"> kW
+    <br><br>
+    <input type="button" value="Tính giá điện" onclick="caculate()">
+  </div>
+
+  <h5 id="result"></h5>
+
+  <script>
+    function caculate(){
+      let x = document.getElementById('soDien').value;
+
+      if(x>0 && x<=50){
+        document.getElementById('result').innerText = "Gía tiền điện phải trả là: " + x*500;
+      }else if(x>50 && x<=100){
+        document.getElementById('result').innerText = "Gía tiền điện phải trả là: " + x*1000;
+      }else if(x>100){
+        document.getElementById('result').innerText = "Gía tiền điện phải trả là: " + x*2000;
+      }else{
+        document.getElementById('result').innerText = "Số điện đã nhập không hợp lệ.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1.</title>
+</head>
+<body>
+  <div class="text">
+    <h5>Giải phương trình ax+b</h5>
+    <label for="a">Nhập hệ số a:</label>
+    <input type="text" name="a" id="a">
+    <br><br>
+    <label for="b">Nhập hệ số b</label>
+    <input type="text" name="b" id="b">
+  </div>
+  <input type="button" value="Giải phương trình" onclick="Solve()">
+  <p id="result"></p>
+
+  <script>
+    function Solve(){
+      let a = +document.getElementById('a').value;
+      let b = +document.getElementById('b').value;
+
+      if(a == 0){
+        document.getElementById('result').innerText = "Phương trình vô nghiệm";
+      }else{
+        document.getElementById('result').innerText = "Phương trình có nghiệm là: " + (x =-b/a);
+      }
+    }
+  </script>
+</body>
+</html>
