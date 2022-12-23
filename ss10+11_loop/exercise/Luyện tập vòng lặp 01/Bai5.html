@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng của 20 số đầu tiên trong dãy fibonacci.</title>
+</head>
+<body>
+  <script>
+    let i;
+    let fa = 0;
+    let fb =1;
+    let fx =1;
+    let fsum =fa +fb +fx;
+    for(i = 3;i<20;i++){
+      fa =fb;
+      fb =fx;
+      fx = fa + fb;
+      fsum += fx;
+    }
+    document.write("Vậy tổng 20 số ficbonacci đầu tiên là: " + fsum);
+  </script>
+</body>
+</html>

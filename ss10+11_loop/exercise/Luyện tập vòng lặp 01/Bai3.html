@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 first number of ficbonacci</title>
+</head>
+<body>
+    <script>
+        let i;
+        let fa = 0;
+        let fb =1;
+        let fx =1;
+        let fsum =fa +fb +fx;
+        document.write(fa + " " + fb + " " + fx + " ")
+        for(i = 3;i<20;i++){
+            fa =fb;
+            fb =fx;
+            fx = fa + fb;
+            fsum += fx;
+            document.writeln(fsum);
+        }
+
+    </script>
+</body>
+</html>
