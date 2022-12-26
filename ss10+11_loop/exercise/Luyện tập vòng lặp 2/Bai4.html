@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật</title>
+</head>
+<body>
+  <script>
+    let height = 10;
+    let width = 30;
+    for (let i = 0; i <width; i++) { // Đại diện cho hàng
+      document.write(" * ")
+    }
+
+    for(let i=0;i < height - 2;i++){
+        document.write("<br>")
+        document.write(" * ")
+        for (let i = 1; i <width-1; i++) { // Đại diện cho hàng
+            document.write("&nbsp;&nbsp;&nbsp;")
+        }
+        document.write("* ")
+    }
+
+    document.write("<br>")
+    for (let i = 0; i <width; i++) { // Đại diện cho hàng
+        document.write(" * ")
+    }
+
+  </script>
+</body>
+</html>

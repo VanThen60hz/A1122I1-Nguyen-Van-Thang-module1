@@ -16,7 +16,7 @@
         do{
           x = +prompt("Bạn đoán số:");
         }while(x < a && x > b);
-        rd = Math.round(Math.random(a,b));
+        rd = Math.round(Math.random()*(b-a)+a);
         alert("Kết quả là:" + rd);
         if( x == rd){
           alert("Bạn Thắng")

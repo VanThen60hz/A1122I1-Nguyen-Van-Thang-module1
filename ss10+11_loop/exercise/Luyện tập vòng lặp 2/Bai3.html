@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra hình tam giác vuông</title>
+</head>
+<body>
+  <script>
+    let n = 5;
+
+    for (let i = n; i >= 0; i--) { // Đại diện cho hàng
+      for (let j = i + 1; j <= n; j++) { // Đại diện cho cột
+        document.write("* ");
+      }
+      document.write("<br/>");
+    }
+
+    document.write("<br>")
+
+    for (let i = 0; i <= n; i++) { // Đại diện cho hàng
+      for (let j = i + 1; j <= n; j++) { // Đại diện cho cột
+        document.write("* ");
+      }
+      document.write("<br/>");
+    }
+
+    document.write("<br>")
+
+    for(let i = 0; i < n; i++) {
+        for(let j=0; j<=i; j++){
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+        for(let j=i; j < n; j++){
+            document.write("* ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>")
+
+    for (let i = n; i >= 0; i--) { // Đại diện cho hàng
+        for(let j=0; j<=i; j++){
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+        for(let j=i; j < n; j++){
+            document.write("* ");
+        }
+        document.write("<br/>");
+    }
+
+  </script>
+</body>
+</html>

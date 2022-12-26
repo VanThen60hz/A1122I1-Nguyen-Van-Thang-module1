@@ -6,17 +6,18 @@
 </head>
 <body>
   <script>
-    let i;
-    let fa = 0;
-    let fb =1;
-    let fx =1;
-    let fsum =fa +fb +fx;
-    for(i = 3;i<20;i++){
-      fa =fb;
-      fb =fx;
-      fx = fa + fb;
-      fsum += fx;
-    }
+      let f1 = 1;
+      let f2 =1;
+      let f3 =0;
+      let fsum = f1+f2;
+      document.write(f3 + " " + f1 + " " + f2 + " ")
+      for(let i = 3;i<20;i++){
+          f3 =f2 +f1;
+          f1 =f2;
+          f2 =f3;
+          fsum += f3;
+          document.writeln(f3);
+      }
     document.write("Vậy tổng 20 số ficbonacci đầu tiên là: " + fsum);
   </script>
 </body>
