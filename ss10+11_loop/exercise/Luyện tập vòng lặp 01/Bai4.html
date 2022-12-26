@@ -6,21 +6,21 @@
 </head>
 <body>
   <script>
-    let i;
-    let fa = 0;
-    let fb =1;
-    let fx =1;
-    let fsum =fa +fb +fx;
-    for(i = 3;;i++){
-      fa =fb;
-      fb =fx;
-      fx = fa + fb;
-      fsum += fx;
-      if(i%5 == 0){
-        document.writeln("Số đầu tiên chia hết cho 5 là: " + fsum);
-        break;
+      let f1 = 1;
+      let f2 =1;
+      let f3 =0;
+      document.write(f3 + " " + f1 + " " + f2 + " ")
+      for(let i = 3;i<20;i++){
+          f3 =f2 +f1;
+          f1 =f2;
+          f2 =f3;
+          document.writeln(f3);
+          if(i%5 == 0){
+              document.write("<br>")
+              document.writeln("Số đầu tiên chia hết cho 5 là: " + f3);
+              break;
+          }
       }
-    }
 
   </script>
 
