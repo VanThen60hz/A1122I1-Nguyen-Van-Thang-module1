@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra dãy Ficbonacci</title>
+</head>
+<body>
+    <script>
+        let f1 = 1;
+        let f2 =1;
+        let f3 =0;
+        let n;
+        do{
+            n= +prompt("Nhap so lương ficbonacci:");
+        }while(n<3)
+
+        document.write(f3 + " " + f1 + " " + f2 + " ")
+        for(let i = 3;i<n;i++){
+            f3 =f2 +f1;
+            f1 =f2;
+            f2 =f3;
+            document.writeln(f3);
+        }
+    </script>
+</body>
+</html>

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a231792-82d4-4d2d-b3c2-5e545628a158" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 01/Bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 01/Bai3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 01/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 01/Bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 2/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/Luyện tập vòng lặp 2/Bai4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +25,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codegym-home/Array&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,6 +48,11 @@
       <updated>1672061218589</updated>
       <workItem from="1672061221316" duration="1000" />
       <workItem from="1672061367469" duration="341000" />
+      <workItem from="1672062917271" duration="17000" />
+      <workItem from="1672063920503" duration="425000" />
+      <workItem from="1672236898235" duration="23000" />
+      <workItem from="1672396909967" duration="148000" />
+      <workItem from="1672397580958" duration="13000" />
     </task>
     <servers />
   </component>

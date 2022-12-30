@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi ngân hàng</title>
+</head>
+<body>
+  <script>
+    let money = +prompt("Enter investment amount:");
+    let month = +prompt("Enter number of months: ");
+    let interset_rate = +prompt("Enter annual interest rate in percentage:");
+    let total_interset = 0;
+    for(let i = 0; i < month; i++){
+      total_interset = money * (interset_rate/100)/12 * month;
+    }
+
+    document.write(total_interset + "đồng");
+  </script>
+</body>
+</html>
