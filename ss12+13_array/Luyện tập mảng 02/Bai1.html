@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,
+        in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng nhau</title>
+</head>
+<body>
+<script>
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (let i in a) {
+        document.writeln("<br> row "+ i + ":");
+        for (let j in a[i]) {
+            document.writeln("<br>" + a[i][j]);
+        }
+    }
+</script>
+</body>
+</html>
