@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu "-" giữa 2 số chẵn</title>
+</head>
+<body>
+  <script>
+    let num = prompt("Nhập vào số:");
+    let str = num.toString();
+    let result = [str[0]];
+
+    for (let i = 1; i < str.length; i++) {
+      if (str[i - 1] % 2 === 0 && str[i] % 2 === 0) {
+        result.push('-', str[i]);
+      } else {
+        result.push(str[i]);
+      }
+    }
+    document.write(result.join(''));
+  </script>
+</body>
+</html>
