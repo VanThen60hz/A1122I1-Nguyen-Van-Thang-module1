@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+  <script>
+    let meter,feet;
+    function feetToMeter(feet){
+      meter = 0.305 * feet;
+      alert("Giá trị của "+ feet + " feets sau khi chuyển đổi là: " + meter + " meters")
+    }
+
+    function meterToFeet(meter) {
+      feet = 3.279 * meter;
+      alert("Giá trị của " + meter + " meters sau khi chuyển đổi là: " + feet+ " meters")
+    }
+
+    let temp = +prompt("Chọn phương thức muốn chuyển" +
+            "\n (O nếu muốn chuyển từ feet sang meter, 1 nếu từ meter sang feet)");
+
+    switch (temp){
+      case 0:
+        feet = +prompt("Nhập giá trị cần chuyển")
+        feetToMeter(feet);
+        break;
+      case 1:
+        meter = +prompt("Nhập giá trị cần chuyển");
+        meterToFeet(meter);
+        break;
+      default:
+        alert("Hiện chưa có phương thức tương ứng!")
+    }
+
+  </script>
+</body>
+</html>

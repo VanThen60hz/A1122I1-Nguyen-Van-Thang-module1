@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closure demo</title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            let myNum = 10;
+            function showNum() {
+                alert(myNum);
+            }
+            return showNum();
+        }
+        let callFunc = myFunction();
+        myFunction();
+    </script>
+</body>
+</html>
