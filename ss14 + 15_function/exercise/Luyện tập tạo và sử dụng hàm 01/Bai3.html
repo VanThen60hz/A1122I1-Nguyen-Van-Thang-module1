@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+      hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,
+      trả về tổng của hai tham số.</title>
+</head>
+<body>
+  <script>
+    function twoParameters(number1, number2){
+      if(number1 < number2){
+        alert(number1 + " nhỏ hơn" + number2);
+      }else{
+        return number1 + number2;
+      }
+    }
+
+    let num1 = +prompt("Nhập số thứ nhất: ");
+    let num2 = +prompt("Nhập số thứ hai: ");
+
+    alert(twoParameters(num1,num2))
+  </script>
+</body>
+</html>
