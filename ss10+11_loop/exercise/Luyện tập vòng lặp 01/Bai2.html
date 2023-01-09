@@ -11,8 +11,8 @@
       t = prompt("Nhập thông tin nhiệt độ:");
       if(t>100){
         alert("Xin quý khách giảm nhiệt độ :<")
-      }else{
-        alert("Nhiệt độ quý khách vừa nhập là: "+ t);
+      }else if(t<20){
+        alert("Xin quý khách tăng nhiệt độ :<");
       }
     }while (t>100)
   </script>
