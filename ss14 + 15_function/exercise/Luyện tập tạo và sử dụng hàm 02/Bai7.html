@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</title>
+</head>
+<body>
+  <script>
+    function swap2Number(number1,number2){
+      let temp = number1;
+      number1 = number2;
+      number2 = temp;
+      alert("Số nguyên thứ nhất sau khi đổi chỗ: " + number1);
+      alert("Số nguyên thứ hai sau khi đổi chỗ: " + number2);
+    }
+
+    let num1 = +prompt("Nhập số nguyên thứ nhất");
+    let num2 = +prompt("Nhập số nguyên thứ hai");
+
+    swap2Number(num1,num2);
+  </script>
+</body>
+</html>

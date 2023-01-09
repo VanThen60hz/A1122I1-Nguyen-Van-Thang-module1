@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</title>
+</head>
+<body>
+  <script>
+    function  caculateArea(radius){
+      return Math.PI*Math.pow(radius,2);
+    }
+
+    function caculateCircumferenc(radius){
+      return Math.PI*radius*2;
+    }
+
+    let r = prompt("Nhập bán kính hình tròn");
+    alert("Diện tích hình tròn là: " + caculateArea(r));
+    alert("Chu vi hình tròn là: " + caculateCircumferenc(r));
+
+  </script>
+</body>
+</html>

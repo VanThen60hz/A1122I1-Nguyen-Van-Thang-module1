@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+      Nếu là nguyên dương trả về true, ngược lại trả về false.</title>
+</head>
+<body>
+ <script>
+   function checkPositiveInterger(number){
+     if(number >= 0){
+       return true;
+     }else{
+       return false;
+     }
+   }
+
+   let num = prompt("Nhập ký tự cần kiểm tra xem có phải số nguyên dương?");
+   alert("Nhận định số " + num + " là số nguyên dương là " + checkPositiveInterger(num));
+ </script>
+</body>
+</html>

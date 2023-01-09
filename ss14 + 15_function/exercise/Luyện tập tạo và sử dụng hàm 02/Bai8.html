@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</title>
+</head>
+<body>
+  <script>
+    function reverseArray(array){
+      array.reverse();
+    }
+
+    let n = +prompt("Nhập số lượng phần tử của mảng")
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      arr[i] = +prompt("Nhập giá trị của số nguyên thứ " + (i+1))
+    }
+
+    document.writeln("Mảng trước khi đảo ngược là: "+arr.join(" "));
+
+    reverseArray(arr);
+
+    document.writeln("<br>Mảng sau khi đảo ngược là: "+arr.join(" "));
+  </script>
+</body>
+</html>

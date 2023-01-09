@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+      Nếu là ký tự số hàm trả về true, ngược lại trả về false.</title>
+</head>
+<body>
+  <script>
+    function checkNumbericCharacter(char){
+      if(isNaN(char) == true){
+        return false;
+      }else{
+        return true;
+      }
+    }
+
+    let ch = prompt("Nhập ký tự cần kiểm tra xem có phải ký tự số?");
+    alert("Nhận định ký tự " + ch + " là ký tự số là " + checkNumbericCharacter(ch));
+  </script>
+</body>
+</html>
