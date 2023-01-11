@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="add">
+  <label for="add_new">Add New Product</label>
+  <br /><br />
+  <div class="add_text">
+    <input type="text" name="add_new" id="add_new" placeholder="New Product" />
+    <button onclick="add(arrayOfList)">Add</button>
+  </div>
+</div>
+
+<div class="display">
+  <h2></h2>
+  <br />
+  <h4 id="left-tittle"></h4>
+  <h4 id="right-tittle"></h4>
+  <br />
+  <div id="product_table"></div>
+</div>
+
+<div class="edit">
+  <br /><br /><br />
+  <label for="list_name">Edit product</label>
+  <br /><br />
+  <input type="text" name="list_name" id="list_name" placeholder="list name" />
+  <button onclick="edit()">Edit</button>
+</div>
+
+<script>
+  let arrayOfList = ["SonyXperia", "SamSungGalaxy"];
+  let index =-1;
+  let indexOfDel = -1;
+
+  function displayProductList(arrayOfProductList) {
+    let sout = "<table>";
+    for (let i = 0; i < arrayOfProductList.length; i++) {
+      sout += "<tr>";
+      sout += "<td>" + (i + 1) + "</td>";
+      sout +=
+              "<td>" +
+              "<label for=" +
+              arrayOfProductList[i] +
+              ">" +
+              arrayOfProductList[i]
+              "</td>";
+      sout +=
+              "<td>" +
+              "<input type='button' value='Delete' readonly value=" +
+              arrayOfProductList[i] +
+              " onclick='deleteThis(this.value)'>" +
+              "</td>";
+      sout += "</tr>";
+      sout +=
+              "<input id=" +
+              arrayOfProductList[i] +
+              " type='text' style='display : none; position : absolute; z-index: 3;' readonly value=" +
+              arrayOfProductList[i] +
+              " onClick='clickThis(this.value)'>";
+    }
+    sout += "</table>";
+    console.log(sout);
+    document.getElementById("product_table").innerHTML = sout;
+  }
+
+
+  displayProductList(arrayOfList);
+
+  function add(arrayOfList) {
+    arrayOfList[arrayOfList.length] =
+            document.getElementById("add_new").value;
+    displayProductList(arrayOfList);
+  }
+
+  function clickThis(value) {
+    document.getElementById("list_name").value = value;
+    index = arrayOfList.indexOf(value);
+  }
+
+
+
+
+  function edit() {
+
+    if(index === -1){
+      return alert("Không tìm thấy tên sản phẩm!");
+    }else{
+      arrayOfList[index] = document.getElementById('list_name').value;
+    }
+    displayProductList(arrayOfList);
+  }
+
+ function deleteThis(value) {
+   indexOfDel = arrayOfList.indexOf(value);
+   arrayOfList.splice(indexOfDel,1);
+   displayProductList(arrayOfList);
+ }
+
+
+</script>
+</body>
+
+</html>
