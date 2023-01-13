@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Class và Object</title>
+</head>
+<body>
+
+<script>
+  let student = {
+    id : 1,
+    name : "Nguyễn Văn Thắng",
+    address : "Đà Nẵng",
+    getInfor : function () {
+      return "Id = " + this.id + " Name = " + this.name + " Address = " + this.address;
+    }
+  }
+
+  // let student = new Student(1, "Nguyễn Văn Thắng", "Đà Nẵng");
+  console.log(student.name);
+  console.log(student.getInfor());
+</script>
+</body>
+</html>
