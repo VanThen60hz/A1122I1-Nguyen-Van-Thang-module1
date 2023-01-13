@@ -8,7 +8,28 @@
 </head>
 <body>
  <script>
-    let
+     let n = +prompt("Nhập vào số lượng phần tử của màng");
+     let arr = [];
+     for (let i = 0; i < n; i++) {
+         arr[i] = prompt("Nhập vào giá trị của phần tử tại vị trí "+ i );
+     }
+
+     let ch = prompt("Nhập vào ký tự");
+     let position = arr.indexOf(ch);
+
+     let count = 0;
+
+     if(position === -1){
+         alert(ch + " is not in the array");
+     }else{
+         alert(ch + " is in the array");
+         for (let i = 0; i < n; i++) {
+             if(arr[i] == ch){
+                 count++;
+             }
+         }
+         alert("ký tự " + ch + " xuất hiện " + count + " lần.");
+     }
  </script>
 </body>
 </html>
