@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id = "myCanvas" width="200" height="100" style="border:1px solid #d3d3d3"></canvas>
+<script>
+  class Rectangle {
+    constructor(length,width) {
+      this.length = length;
+      this.width = width;
+    }
+
+    getArea(){
+      return document.writeln("Area = " + (this.length*this.width))
+    }
+
+    getPerimeter(){
+      return document.writeln("Perimeter = " + (this.length+this.width)*2);
+    }
+
+
+    draw(ctx){
+      ctx.beginPath();
+      ctx.rect(40,10,this.width,this.length);
+      ctx.fillStyle = "black";
+      ctx.fill();
+    }
+
+  }
+
+  let rectangle = new Rectangle(40,80);
+
+  rectangle.getArea();
+  rectangle.getPerimeter();
+
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  rectangle.draw(ctx)
+</script>
+</body>
+</html>

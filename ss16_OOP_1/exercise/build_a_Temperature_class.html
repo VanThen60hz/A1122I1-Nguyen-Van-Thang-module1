@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+  class Temperature {
+    constructor(C) {
+      this.C = C;
+    }
+    getF(){
+      return document.writeln("Chuyển sang độ F có giá trị là: " + this.C * 1.8 + " độ F");
+    }
+    getK(){
+      return document.writeln("Chuyển sang độ K có giá trị là: " + this.C + 273.15 + " độ K");
+    }
+  }
+  let temperature = new Temperature(25)
+
+  temperature.getF();
+  document.writeln("<br>")
+  temperature.getK();
+</script>
+</body>
+</html>

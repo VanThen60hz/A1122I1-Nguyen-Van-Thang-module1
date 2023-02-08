@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<script>
+
+  class Mobile{
+    constructor(battery, status) {
+      this.battery = battery;
+      this.status = status;
+      this.memoryAreaOfCompose = [];
+      this.memoryAreaOfInbox = [];
+      this.memoryAreaOfSent = [];
+      this.message = "";
+    }
+
+    checkStatus(){
+      return this.status;
+      this.battery--;
+    }
+
+    turnOn(){
+      this.status = "ON";
+      this.battery--;
+    }
+
+    turnOff(){
+      this.status = "OFF";
+      this.battery--;
+    }
+
+    Charge(){
+      this.battery++;
+    }
+
+    setMessage(message) {
+      return this.message;
+      this.memoryAreaOfCompose.push(message);
+      this.battery--;
+    }
+
+    getMessage(message,Mobile) {
+      return this.message;
+      this.memoryAreaOfInbox.push(message);
+      this.battery--;
+    }
+
+    sendMessage(message,mobile) {
+      mobile.setMessage(message);
+      mobile.memoryAreaOfInbox.push(message);
+      this.memoryAreaOfSent.push(message);
+      this.battery--;
+    }
+
+    checkInbox(){
+      return this.memoryAreaOfInbox;
+      this.battery--;
+    }
+
+    checkSent(){
+      return this.memoryAreaOfSent;
+      this.battery--;
+    }
+  }
+  let nokia = new Mobile(100,"ON");
+  let iphone = new Mobile(20,"OFF");
+  nokia.sendMessage("Message from nokia",iphone);
+  console.log(iphone.checkInbox());
+</script>
+</body>
+</html>
