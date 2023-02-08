@@ -11,17 +11,17 @@
       this.C = C;
     }
     getF(){
-      return document.writeln("Chuyển sang độ F có giá trị là: " + this.C * 1.8 + " độ F");
+      return this.C * 1.8 ;
     }
     getK(){
-      return document.writeln("Chuyển sang độ K có giá trị là: " + this.C + 273.15 + " độ K");
+      return this.C + 273.15;
     }
   }
-  let temperature = new Temperature(25)
+  let temperature = new Temperature(35);
 
-  temperature.getF();
-  document.writeln("<br>")
-  temperature.getK();
+  document.writeln("Chuyển sang độ F có giá trị là: " + temperature.getF() + " độ F")
+  document.writeln("<br>");
+  document.writeln("Chuyển sang độ K có giá trị là: " + temperature.getK() + " độ K")
 </script>
 </body>
 </html>
