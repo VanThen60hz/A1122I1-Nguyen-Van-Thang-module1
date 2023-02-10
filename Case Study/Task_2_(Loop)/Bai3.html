@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác cân rỗng có chiều cao h do người dùng nhập vào. Ví dụ: h = 5</title>
+</head>
+<body>
+
+<script>
+  function drawTriangle(h) {
+    for (var i = 1; i <= h; i++) {
+      var row = '';
+      for (var j = 1; j <= h - i; j++) {
+        row += ' ';
+      }
+      for (var k = 1; k <= 2 * i - 1; k++) {
+        if( k == 1 || k == 2 * i - 1 || i == h){
+          row += '*';
+        }else{
+          row += ' ';
+        }
+
+      }
+      console.log(row);
+    }
+  }
+
+  drawTriangle(5);
+
+
+</script>
+</body>
+</html>

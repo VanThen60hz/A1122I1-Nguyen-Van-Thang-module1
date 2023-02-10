@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    function drawTriangle(h) {
+
+        for (let i = 1; i < h; i++) {
+            let row = '';
+            for (let k = 1; k <= i; k++) {
+                if(k == 1 || k == i){
+                    row += '* ';
+                }else{
+                    row += '  ';
+
+                }
+            }
+            console.log(row);
+        }
+
+        row = '';
+        for (let i = 1; i <= h; i++) {
+            row += '* ';
+        }
+        console.log(row);
+    }
+
+    drawTriangle(5);
+
+</script>
+</body>
+</html>
