@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Move Objects</title>
+</head>
+<body>
+<div id="game"></div>
+<script !src="">
+
+    class Hero{
+        constructor(image, top, left, size, speed) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+            this.speed = speed;
+        }
+
+        getHeroElement(){
+            return '<img width="'+ this.size + '"' +
+                    ' height="'+ this.size + '"' +
+                    ' src="' + this.image +'"' +
+                    ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        }
+
+        moveRight(){
+            this.left += 20;
+            console.log('ok: ' + this.left);
+        }
+
+        moveLeft(){
+            this.left -= 20;
+            console.log('ok: ' + this.left);
+        }
+
+        moveDown(){
+            this.top += 20;
+            console.log('ok: ' + this.top);
+        }
+
+        moveUp(){
+            this.top = this.top - 20;
+            console.log('ok: ' + this.top);
+        }
+    }
+
+    let hero = new Hero('doraemon.png', 20, 30, 200, 70);
+
+    function start(){
+        if(hero.left < window.innerWidth - hero.size && hero.top == 20){
+            hero.moveRight();
+        }else{
+            if(hero.top <= window.innerHeight - hero.size && hero.left >= window.innerWidth - hero.size){
+                hero.moveDown();
+            }else{
+                if(hero.left > 30){
+                    hero.moveLeft();
+                }else{
+                    if(hero.top !== 20){
+                        hero.moveUp();
+                    }
+
+                }
+            }
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, hero.speed)
+    }
+    start();
+</script>
+</body>
+</html>

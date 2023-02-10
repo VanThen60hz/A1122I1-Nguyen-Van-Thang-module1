@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+
+  <script>
+      class Apple {
+          constructor() {
+              this._weight = 10;
+          }
+
+          get weight() {
+              return this._weight;
+          }
+
+          decrease(){
+              this._weight--;
+          }
+
+          isEmpty(){
+              if(this.weight == 0){
+                  return true;
+              }else{
+                  return false;
+              }
+          }
+      }
+
+      class Human {
+          constructor(name, gender, weight) {
+              this.name = name;
+              this.gender = gender;
+              this._weight = weight;
+          }
+
+          speak(words) {
+              console.log(words);
+          }
+
+          eat(apple) {
+              if (apple.weight > 0) {
+                  this._weight++;
+                  apple._weight--;
+              }
+          }
+
+          checkAppleWeight(apple) {
+              console.log(`Khối lượng của quả táo là ${apple.weight}`);
+          }
+
+          get weight() {
+              return this._weight;
+          }
+
+          get name() {
+              return this._name;
+          }
+
+          set name(value) {
+              this._name = value;
+          }
+
+          get gender() {
+              return this._gender;
+          }
+
+          set gender(value) {
+              this._gender = value;
+          }
+      }
+
+      const adam = new Human("Adam", "Nam", 45);
+      const eva = new Human("Eva", "Nữ", 33);
+      const apple = new Apple();
+
+      adam.speak("Chào bạn, tôi là Adam");
+      eva.speak("Chào bạn, tôi là Eva");
+
+      adam.eat(apple);
+      eva.eat(apple);
+
+      adam.checkAppleWeight(apple);
+
+      console.log(`Tên của Adam là ${adam.name}`);
+      console.log(`Giới tính của Adam là ${adam.gender}`);
+      console.log(`Cân nặng của Adam là ${adam.weight}`);
+
+      console.log(`Tên của Eva là ${eva.name}`);
+      console.log(`Giới tính của Eva là ${eva.gender}`);
+      console.log(`Cân nặng của Eva là ${eva.weight}`);
+
+  </script>
+</body>
+</html>
