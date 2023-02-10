@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lương nhân viên</title>
+</head>
+<body>
+
+<script>
+  let salary = +prompt("Nhập lương nhân viên");
+  let tax = 0;
+  if(salary >= 15000000){
+    tax = salary * 0.2;
+  }else if(salary >= 7000000){
+    tax = salary * 0.1;
+  }else{
+    tax = salary * 0.05;
+  }
+
+  let netSalary = salary - tax;
+  alert("Số lương của nhân viên là: " + netSalary + " đồng.")
+</script>
+
+</body>
+</html>
