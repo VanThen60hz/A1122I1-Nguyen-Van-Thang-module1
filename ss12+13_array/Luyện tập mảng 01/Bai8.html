@@ -7,6 +7,12 @@
 </head>
 <body>
   <script>
+      do {
+          let n = +prompt("Nhập số phần tử của mảng: ");
+          if (n > 50) {
+              alert("Số phần tử phải nhỏ hơn hoặc bằng 50");
+          }
+      } while (n > 50);
     let arr = [];
     for (let i = 0; i < 10; i++) {
       arr[i] = +prompt("Nhập vào giá trị của phần tử thứ " + (i + 1));
